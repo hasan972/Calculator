@@ -1,3 +1,8 @@
 function insertnum(number){
-  $("#result").val(number)
+  var existingNumber = $("#result").val();
+  $("#result").val(existingNumber + number)
+}
+
+function clearRes(){
+  $("#result").val('')
 }
